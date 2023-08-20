@@ -1,0 +1,6 @@
+.dashboard-container {
+    background-image: url('../../../assets/pumps.jpg'); /* Replace with the actual path to your image */
+    background-position: center center; /* Adjust the background position as needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    display: flex;
+}

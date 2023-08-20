@@ -1,0 +1,61 @@
+<div style="padding: 20px; overflow-y: auto; height: 90vh;" >
+    <div class="d-flex justify-content-center">
+        <h2>Add Customer</h2>
+    </div>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="purchaseDate">Purchase Date</label>
+            <input type="date" class="form-control" id="purchaseDate" name="purchaseDate" [(ngModel)]="purchaseDate" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name" required>
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile</label>
+          <input type="tel" class="form-control" id="mobile" name="mobile" [(ngModel)]="mobile" required>
+        </div>
+        <div class="form-group">
+          <label for="dealerCode">Dealer Code</label>
+          <div>
+              <select class="selectLocation">
+                <option [value]="item.value" class="options" *ngFor="let item of dealers">{{item.dealerCode}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea class="form-control" id="address" rows="3" [(ngModel)]="address" required></textarea>
+        </div>
+        <div class="form-group d-flex">
+            <div style="flex: 1;">
+                <label for="motor">Motor</label>
+                <input type="text" class="form-control" id="motor" name="motor" [(ngModel)]="motor" required>
+            </div>
+            <div style="flex: 1; margin-left: 10px;">
+                <label for="motorSerial">Motor Serial No.</label>
+                <input type="text" class="form-control" id="motorSerial" name="motorSerial" [(ngModel)]="motorSerial" required>
+            </div>
+        </div>
+        <div class="form-group d-flex">
+            <div style="flex: 1;">
+                <label for="pump">Pump</label>
+                <input type="text" class="form-control" id="pump" name="pump" [(ngModel)]="pump" required>
+            </div>
+            <div style="flex: 1; margin-left: 10px;">
+                <label for="pumpSerial">Pump Serial No.</label>
+                <input type="text" class="form-control" id="pumpSerial" name="pumpSerial" [(ngModel)]="pumpSerial" required>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="address">Customer Bill</label>
+          <input type="file" class="form-control" id="dealerCode" name="dealerCode" [(ngModel)]="dealerCode" required>
+        </div>
+        <div class="form-group d-flex justify-content-end">
+            <button  class="btn btn-danger" style="margin-right: 10px;" (click)="closeDialog()">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+</div>
+  

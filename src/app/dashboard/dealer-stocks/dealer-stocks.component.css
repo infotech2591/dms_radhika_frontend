@@ -1,0 +1,7 @@
+.dealerButtons{
+    margin-top: 2%;
+    display: flex;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    padding: 10px;
+}

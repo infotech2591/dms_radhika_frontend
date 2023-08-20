@@ -1,0 +1,62 @@
+.side-bar-container {
+    height: 100vh;
+    box-shadow: 0px 3px 5px 4px #131313;
+    background-color: #4a4b4c;
+}
+
+.sidnav-items {
+    width: 100%;
+    padding-top: 40px;
+    height: auto;
+}
+
+.sidebarItem svg,
+.notSelectedItem svg {
+    margin-top: -5px;
+    margin-right: 11px;
+}
+.nav_header{
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+}
+.nav_items{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: sans-serif;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+.fixed-bottom{
+    width: 6%;
+}
+.component_class{
+    height: 832px ;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.nav_items.active {
+    background-color: #0369ff;
+    color: #fff;
+    height: 5vh;
+    padding: 13px 1px 1px 20px;
+    border-radius: 10px;
+}
+
+.navbar{
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px 5px 5px;
+}
+
+.hrLine{
+    height: 1px;
+    color: black;
+    background-color: black;
+    border: 0;
+    margin: 0;
+}

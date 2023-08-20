@@ -1,0 +1,18 @@
+::ng-deep mat-dialog-container {
+    display: block !important;
+    padding: 24px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: auto;
+    outline: 0;
+    width: 50% !important;
+    height: auto !important;
+    min-height: inherit;
+    max-height: 95% !important;
+    position: absolute !important;
+    margin-left: 25% !important;
+}
+
+.form-group{
+    margin-top: 10px !important;
+}
